@@ -27,7 +27,7 @@ elementButton.addEventListener("click", function (){
     // in questo caso usiamo parseInt in cui vogliamo prendere solo i numeri interi
 
   // presa la distanza inserita dal cliente calcoliamoci il costo che andrà a pagare senza lo sconto
-  let prezzoTotale = prezzoBiglietto * elementDistanzaUtente;
+  let prezzoTotale = prezzoBiglietto * distance;
 
   // creiamoci la condizione
   if (age < 18) {
@@ -38,7 +38,7 @@ elementButton.addEventListener("click", function (){
     // se il numero di età inserito è superiore o uguale a 65 allora si applicherà lo sconto del 53.27%
   }
   // richiamato elementRisultato per andare ad inserire il valore finale
-    elementRisultato.innerHTML = prezzoTotale.toFixed(2) + '';
+    elementRisultato.innerHTML = prezzoTotale.toFixed(2) + '€';
  });
 
 
